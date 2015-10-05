@@ -32,6 +32,13 @@
 		612AAD221BB44B1100144E5F /* TMGuildUpgradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AAD211BB44B1100144E5F /* TMGuildUpgradesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		612AAD241BB44B2E00144E5F /* TMGuildRanksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AAD231BB44B2E00144E5F /* TMGuildRanksViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		612AAD261BB44B5B00144E5F /* TMGuildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AAD251BB44B5B00144E5F /* TMGuildViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6163E6121BBEA08E00AFDB62 /* TMDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6163E6111BBEA08E00AFDB62 /* TMDataManager.swift */; settings = {ASSET_TAGS = (); }; };
+		6163E6141BBEA0C000AFDB62 /* TMConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6163E6131BBEA0C000AFDB62 /* TMConstants.swift */; settings = {ASSET_TAGS = (); }; };
+		6163E6161BBEA78200AFDB62 /* TMJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6163E6151BBEA78200AFDB62 /* TMJSONParser.swift */; settings = {ASSET_TAGS = (); }; };
+		6163E6181BBEA83D00AFDB62 /* TMAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6163E6171BBEA83D00AFDB62 /* TMAccount.swift */; settings = {ASSET_TAGS = (); }; };
+		6163E61A1BBEA9AB00AFDB62 /* TMGuildEmblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6163E6191BBEA9AB00AFDB62 /* TMGuildEmblem.swift */; settings = {ASSET_TAGS = (); }; };
+		6175570E1BBECA520008FE47 /* TMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6175570D1BBECA520008FE47 /* TMTabBarController.swift */; settings = {ASSET_TAGS = (); }; };
+		9A80EB7A889658E765AFCE6C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F7DF2191BA8AA9DEB53EE4 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +84,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17302F1F2B412D2840F8E34C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		23F7DF2191BA8AA9DEB53EE4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		612AACCA1BB4452900144E5F /* TyriaMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TyriaMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		612AACCD1BB4452900144E5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		612AACCF1BB4452900144E5F /* TMRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMRootViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +116,13 @@
 		612AAD211BB44B1100144E5F /* TMGuildUpgradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMGuildUpgradesViewController.swift; path = Guild/TMGuildUpgradesViewController.swift; sourceTree = "<group>"; };
 		612AAD231BB44B2E00144E5F /* TMGuildRanksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMGuildRanksViewController.swift; path = Guild/TMGuildRanksViewController.swift; sourceTree = "<group>"; };
 		612AAD251BB44B5B00144E5F /* TMGuildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMGuildViewController.swift; path = Guild/TMGuildViewController.swift; sourceTree = "<group>"; };
+		6163E6111BBEA08E00AFDB62 /* TMDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMDataManager.swift; path = "JSON Parser/TMDataManager.swift"; sourceTree = "<group>"; };
+		6163E6131BBEA0C000AFDB62 /* TMConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMConstants.swift; sourceTree = "<group>"; };
+		6163E6151BBEA78200AFDB62 /* TMJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMJSONParser.swift; path = "JSON Parser/TMJSONParser.swift"; sourceTree = "<group>"; };
+		6163E6171BBEA83D00AFDB62 /* TMAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMAccount.swift; path = Classes/TMAccount.swift; sourceTree = "<group>"; };
+		6163E6191BBEA9AB00AFDB62 /* TMGuildEmblem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMGuildEmblem.swift; path = Classes/TMGuildEmblem.swift; sourceTree = "<group>"; };
+		6175570D1BBECA520008FE47 /* TMTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMTabBarController.swift; sourceTree = "<group>"; };
+		BB34E2EC11BDEF50FB1DB21C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A80EB7A889658E765AFCE6C /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +144,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BC92472C5DBB4EF25C9C043 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17302F1F2B412D2840F8E34C /* Pods.debug.xcconfig */,
+				BB34E2EC11BDEF50FB1DB21C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2D96F065721A4A048266C02C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23F7DF2191BA8AA9DEB53EE4 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		612AACC11BB4452900144E5F = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +168,8 @@
 				612AACE01BB4452A00144E5F /* TyriaMessenger WatchKit App */,
 				612AACEF1BB4452A00144E5F /* TyriaMessenger WatchKit Extension */,
 				612AACCB1BB4452900144E5F /* Products */,
+				2BC92472C5DBB4EF25C9C043 /* Pods */,
+				2D96F065721A4A048266C02C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,13 +187,16 @@
 			isa = PBXGroup;
 			children = (
 				612AACCD1BB4452900144E5F /* AppDelegate.swift */,
+				6163E6131BBEA0C000AFDB62 /* TMConstants.swift */,
 				612AACCF1BB4452900144E5F /* TMRootViewController.swift */,
 				612AAD111BB4473700144E5F /* TMManager.swift */,
+				6175570D1BBECA520008FE47 /* TMTabBarController.swift */,
 				612AACD11BB4452900144E5F /* Main.storyboard */,
 				612AACD61BB4452900144E5F /* LaunchScreen.storyboard */,
 				612AAD101BB4463100144E5F /* Classes */,
 				612AAD1A1BB44A9900144E5F /* Guild */,
 				612AAD0D1BB445D500144E5F /* Guild Table */,
+				6163E60E1BBEA04600AFDB62 /* JSON Parser */,
 				612AAD0C1BB4453400144E5F /* Supporting Files */,
 			);
 			path = TyriaMessenger;
@@ -217,7 +256,9 @@
 		612AAD101BB4463100144E5F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6163E6171BBEA83D00AFDB62 /* TMAccount.swift */,
 				612AAD0E1BB4462B00144E5F /* TMGuild.swift */,
+				6163E6191BBEA9AB00AFDB62 /* TMGuildEmblem.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -235,6 +276,15 @@
 			name = Guild;
 			sourceTree = "<group>";
 		};
+		6163E60E1BBEA04600AFDB62 /* JSON Parser */ = {
+			isa = PBXGroup;
+			children = (
+				6163E6111BBEA08E00AFDB62 /* TMDataManager.swift */,
+				6163E6151BBEA78200AFDB62 /* TMJSONParser.swift */,
+			);
+			name = "JSON Parser";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,10 +292,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 612AAD091BB4452A00144E5F /* Build configuration list for PBXNativeTarget "TyriaMessenger" */;
 			buildPhases = (
+				F0165B9049B9D72CC8209764 /* Check Pods Manifest.lock */,
 				612AACC61BB4452900144E5F /* Sources */,
 				612AACC71BB4452900144E5F /* Frameworks */,
 				612AACC81BB4452900144E5F /* Resources */,
 				612AAD081BB4452A00144E5F /* Embed Watch Content */,
+				B9F38545EC46A4F57A5B81E1 /* Embed Pods Frameworks */,
+				6D22E12C34591A7C7A1083E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,23 +414,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6D22E12C34591A7C7A1083E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9F38545EC46A4F57A5B81E1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0165B9049B9D72CC8209764 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		612AACC61BB4452900144E5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6163E6161BBEA78200AFDB62 /* TMJSONParser.swift in Sources */,
 				612AACD01BB4452900144E5F /* TMRootViewController.swift in Sources */,
+				6163E61A1BBEA9AB00AFDB62 /* TMGuildEmblem.swift in Sources */,
 				612AAD261BB44B5B00144E5F /* TMGuildViewController.swift in Sources */,
 				612AACCE1BB4452900144E5F /* AppDelegate.swift in Sources */,
 				612AAD171BB44A2C00144E5F /* TMGuildTableViewController.swift in Sources */,
 				612AAD221BB44B1100144E5F /* TMGuildUpgradesViewController.swift in Sources */,
 				612AAD121BB4473700144E5F /* TMManager.swift in Sources */,
 				612AAD241BB44B2E00144E5F /* TMGuildRanksViewController.swift in Sources */,
+				6163E6181BBEA83D00AFDB62 /* TMAccount.swift in Sources */,
 				612AAD0F1BB4462B00144E5F /* TMGuild.swift in Sources */,
 				612AAD191BB44A4A00144E5F /* TMGuildTableViewCell.swift in Sources */,
+				6175570E1BBECA520008FE47 /* TMTabBarController.swift in Sources */,
 				612AAD1C1BB44AE100144E5F /* TMGuildChatViewController.swift in Sources */,
 				612AAD201BB44B0100144E5F /* TMGuildActivityViewController.swift in Sources */,
 				612AAD1E1BB44AF200144E5F /* TMGuildRosterViewController.swift in Sources */,
+				6163E6141BBEA0C000AFDB62 /* TMConstants.swift in Sources */,
+				6163E6121BBEA08E00AFDB62 /* TMDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +690,7 @@
 		};
 		612AAD0A1BB4452A00144E5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17302F1F2B412D2840F8E34C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TyriaMessenger/Info.plist;
@@ -594,6 +702,7 @@
 		};
 		612AAD0B1BB4452A00144E5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB34E2EC11BDEF50FB1DB21C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TyriaMessenger/Info.plist;
@@ -622,6 +731,7 @@
 				612AAD031BB4452A00144E5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		612AAD051BB4452A00144E5F /* Build configuration list for PBXNativeTarget "TyriaMessenger WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -630,6 +740,7 @@
 				612AAD071BB4452A00144E5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		612AAD091BB4452A00144E5F /* Build configuration list for PBXNativeTarget "TyriaMessenger" */ = {
 			isa = XCConfigurationList;
@@ -638,6 +749,7 @@
 				612AAD0B1BB4452A00144E5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

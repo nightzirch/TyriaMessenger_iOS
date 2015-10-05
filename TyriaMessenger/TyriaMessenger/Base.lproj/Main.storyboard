@@ -1,7 +1,119 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9Z3-hr-5fS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Guild Table View Controller-->
+        <scene sceneID="4Vj-MJ-uRU">
+            <objects>
+                <viewController id="fuT-CW-IjN" customClass="TMGuildTableViewController" customModule="TyriaMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OMQ-KP-OIi"/>
+                        <viewControllerLayoutGuide type="bottom" id="mkO-y6-acM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SOx-zB-kYi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="165" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mkM-dQ-9CQ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TMGuildCell" rowHeight="120" id="D4P-uV-BQ1" customClass="TMGuildTableViewCell" customModule="TyriaMessenger" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D4P-uV-BQ1" id="uCy-zi-K1N">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="we9-HJ-wuE">
+                                                    <rect key="frame" x="18" y="10" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="hMa-q3-eHN"/>
+                                                        <constraint firstAttribute="width" constant="100" id="rTN-3y-yb7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79e-A4-hjc">
+                                                    <rect key="frame" x="128" y="49" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="we9-HJ-wuE" firstAttribute="centerY" secondItem="uCy-zi-K1N" secondAttribute="centerY" id="Icr-gt-qnT"/>
+                                                <constraint firstItem="79e-A4-hjc" firstAttribute="leading" secondItem="we9-HJ-wuE" secondAttribute="trailing" constant="10" id="TjG-8c-UXL"/>
+                                                <constraint firstItem="we9-HJ-wuE" firstAttribute="leading" secondItem="uCy-zi-K1N" secondAttribute="leadingMargin" constant="10" id="Tno-BI-xyc"/>
+                                                <constraint firstItem="79e-A4-hjc" firstAttribute="centerY" secondItem="uCy-zi-K1N" secondAttribute="centerY" id="ltP-Je-dZq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="guildEmblem" destination="we9-HJ-wuE" id="cEy-91-eh7"/>
+                                            <outlet property="guildName" destination="79e-A4-hjc" id="lA3-78-Uwg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fuT-CW-IjN" id="a9A-au-hCt"/>
+                                    <outlet property="delegate" destination="fuT-CW-IjN" id="Gq4-DP-8PY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mkM-dQ-9CQ" secondAttribute="trailing" id="GFo-Zh-g2q"/>
+                            <constraint firstItem="mkM-dQ-9CQ" firstAttribute="leading" secondItem="SOx-zB-kYi" secondAttribute="leading" id="bNh-Ar-WNh"/>
+                            <constraint firstItem="mkM-dQ-9CQ" firstAttribute="top" secondItem="OMQ-KP-OIi" secondAttribute="bottom" id="fIF-VS-5YK"/>
+                            <constraint firstItem="mkO-y6-acM" firstAttribute="top" secondItem="mkM-dQ-9CQ" secondAttribute="bottom" id="hsI-Ga-Brm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="XaI-rk-7am"/>
+                    <connections>
+                        <outlet property="tableView" destination="mkM-dQ-9CQ" id="YTZ-BR-YZ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFJ-1X-6Kx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1466" y="748"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7ns-8h-cVm">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9Z3-hr-5fS" customClass="TMTabBarController" customModule="TyriaMessenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Sad-tq-Zgm">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fuT-CW-IjN" kind="relationship" relationship="viewControllers" id="qQ8-D2-0i0"/>
+                        <segue destination="0WB-mo-2YS" kind="relationship" relationship="viewControllers" id="jiq-PH-wA4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="og6-5q-J24" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="748"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pBY-Sy-ceR">
+            <objects>
+                <viewController id="0WB-mo-2YS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4rm-ju-CuU"/>
+                        <viewControllerLayoutGuide type="bottom" id="twp-oi-g3N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i6J-Wm-tha">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="0B0-1o-yZo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khG-5B-SHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="1509"/>
+        </scene>
+    </scenes>
 </document>

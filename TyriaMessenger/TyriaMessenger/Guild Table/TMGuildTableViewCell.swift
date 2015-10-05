@@ -10,5 +10,6 @@ import Foundation
 import UIKit
 
 class TMGuildTableViewCell: UITableViewCell {
-    
+    @IBOutlet weak var guildName: UILabel!
+    @IBOutlet weak var guildEmblem: UIImageView!
 }

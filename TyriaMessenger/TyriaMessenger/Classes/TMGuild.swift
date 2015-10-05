@@ -10,18 +10,19 @@ import Foundation
 import UIKit
 
 public class TMGuild: NSObject {
-    var guildName: String = ""
-    var guildTag: String = ""
-    var guildEmblem: UIImage = UIImage()
+    var id: String = ""
+    var name: String = ""
+    var tag: String = ""
+    var emblem: TMGuildEmblem = TMGuildEmblem()
     
     override init() {
         super.init()
     }
     
-    init(withName name: String, tag: String, emblem: UIImage) {
+    init(withID: String, name: String, tag: String, emblem: TMGuildEmblem) {
         super.init()
-        guildName = name
-        guildTag = tag
-        guildEmblem = emblem
+        self.name = name
+        self.tag = tag
+        self.emblem = emblem
     }
 }
