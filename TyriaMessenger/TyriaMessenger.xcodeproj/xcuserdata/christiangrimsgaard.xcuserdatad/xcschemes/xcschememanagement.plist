@@ -9,20 +9,40 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>Complication - TyriaMessenger WatchKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>Glance - TyriaMessenger WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+		<key>Glance - TyriaMessenger WatchKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
 		</dict>
 		<key>Notification - TyriaMessenger WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Notification - TyriaMessenger WatchKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>TyriaMessenger WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>TyriaMessenger WatchKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>TyriaMessenger.xcscheme</key>
 		<dict>
@@ -38,6 +58,11 @@
 			<true/>
 		</dict>
 		<key>612AACDB1BB4452A00144E5F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>61DBC0AB1BC408D1006F7869</key>
 		<dict>
 			<key>primary</key>
 			<true/>

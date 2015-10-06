@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Guild Table View Controller-->
+        <!--Guilds-->
         <scene sceneID="4Vj-MJ-uRU">
             <objects>
                 <viewController id="fuT-CW-IjN" customClass="TMGuildTableViewController" customModule="TyriaMessenger" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,22 +21,22 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TMGuildCell" rowHeight="120" id="D4P-uV-BQ1" customClass="TMGuildTableViewCell" customModule="TyriaMessenger" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="600" height="120"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TMGuildCell" rowHeight="100" id="D4P-uV-BQ1" customClass="TMGuildTableViewCell" customModule="TyriaMessenger" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D4P-uV-BQ1" id="uCy-zi-K1N">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="we9-HJ-wuE">
-                                                    <rect key="frame" x="18" y="10" width="100" height="100"/>
+                                                    <rect key="frame" x="18" y="-1" width="100" height="101"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="hMa-q3-eHN"/>
                                                         <constraint firstAttribute="width" constant="100" id="rTN-3y-yb7"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79e-A4-hjc">
-                                                    <rect key="frame" x="128" y="49" width="42" height="21"/>
+                                                    <rect key="frame" x="128" y="39" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -69,7 +69,7 @@
                             <constraint firstItem="mkO-y6-acM" firstAttribute="top" secondItem="mkM-dQ-9CQ" secondAttribute="bottom" id="hsI-Ga-Brm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="XaI-rk-7am"/>
+                    <tabBarItem key="tabBarItem" title="Guilds" image="Guild Tab Icon" selectedImage="Guild Tab Icon" id="XaI-rk-7am"/>
                     <connections>
                         <outlet property="tableView" destination="mkM-dQ-9CQ" id="YTZ-BR-YZ4"/>
                     </connections>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="728" y="748"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="pBY-Sy-ceR">
             <objects>
-                <viewController id="0WB-mo-2YS" sceneMemberID="viewController">
+                <viewController id="0WB-mo-2YS" customClass="TMSettingsViewController" customModule="TyriaMessenger" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4rm-ju-CuU"/>
                         <viewControllerLayoutGuide type="bottom" id="twp-oi-g3N"/>
@@ -107,13 +107,49 @@
                     <view key="view" contentMode="scaleToFill" id="i6J-Wm-tha">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="API Token" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kn-Ps-3Hq">
+                                <rect key="frame" x="30" y="35" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZP-XQ-jhn">
+                                <rect key="frame" x="117" y="30" width="453" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label=""/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1kn-Ps-3Hq" firstAttribute="top" secondItem="4rm-ju-CuU" secondAttribute="bottom" constant="15" id="20I-Ug-7a5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RZP-XQ-jhn" secondAttribute="trailing" constant="10" id="3V8-bf-pXH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RZP-XQ-jhn" secondAttribute="trailing" constant="10" id="Nud-NT-bF1"/>
+                            <constraint firstItem="1kn-Ps-3Hq" firstAttribute="leading" secondItem="i6J-Wm-tha" secondAttribute="leadingMargin" constant="10" id="PPt-26-rX4"/>
+                            <constraint firstItem="RZP-XQ-jhn" firstAttribute="top" secondItem="i6J-Wm-tha" secondAttribute="topMargin" constant="10" id="kun-ge-HtA"/>
+                            <constraint firstItem="RZP-XQ-jhn" firstAttribute="leading" secondItem="1kn-Ps-3Hq" secondAttribute="trailing" constant="10" id="sVI-Wa-Bq0"/>
+                            <constraint firstItem="RZP-XQ-jhn" firstAttribute="top" secondItem="4rm-ju-CuU" secondAttribute="bottom" constant="10" id="vvj-rS-duq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3V8-bf-pXH"/>
+                                <exclude reference="kun-ge-HtA"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="0B0-1o-yZo"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings Tab Icon" id="0B0-1o-yZo"/>
+                    <connections>
+                        <outlet property="apiTokenTextField" destination="RZP-XQ-jhn" id="dmJ-fT-jPg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khG-5B-SHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="728" y="1509"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Guild Tab Icon" width="25" height="25"/>
+        <image name="Settings Tab Icon" width="25" height="25"/>
+    </resources>
 </document>

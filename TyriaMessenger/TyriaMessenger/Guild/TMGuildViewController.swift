@@ -10,5 +10,9 @@ import Foundation
 import UIKit
 
 class TMGuildViewController: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
 }

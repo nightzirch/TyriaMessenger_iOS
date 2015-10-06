@@ -16,8 +16,7 @@ let TM_GW2API_V2_BASE_URL               = "https://api.guildwars2.com/v2/"
 let TM_GW2API_TOKENINFO_UR              = TM_GW2API_V2_BASE_URL + "tokeninfo"
 let TM_GW2API_ACCOUNT_URL               = TM_GW2API_V2_BASE_URL + "account"
 
-let TM_GW2API_GUILD_BASE_URL            = TM_GW2API_V1_BASE_URL + "guild_details.json"
-let TM_GW2API_GUILD_DETAILS_URL         = TM_GW2API_GUILD_BASE_URL + "?guild_id=$GUILD_ID"
+let TM_GW2API_GUILD_DETAILS_URL         = TM_GW2API_V1_BASE_URL + "guild_details.json"
 
 //let TM_GW2API_GUILD_BASE_URL            = TM_GW2API_V2_BASE_URL + "guild/"
 //let TM_GW2API_GUILD_DETAILS_URL         = TM_GW2API_GUILD_BASE_URL + "$GUILD_ID"

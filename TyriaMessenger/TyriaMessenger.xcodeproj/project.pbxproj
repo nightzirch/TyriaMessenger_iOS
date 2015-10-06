@@ -12,16 +12,6 @@
 		612AACD31BB4452900144E5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612AACD11BB4452900144E5F /* Main.storyboard */; };
 		612AACD51BB4452900144E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612AACD41BB4452900144E5F /* Assets.xcassets */; };
 		612AACD81BB4452900144E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612AACD61BB4452900144E5F /* LaunchScreen.storyboard */; };
-		612AACDD1BB4452A00144E5F /* TyriaMessenger WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 612AACDC1BB4452A00144E5F /* TyriaMessenger WatchKit App.app */; };
-		612AACE31BB4452A00144E5F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 612AACE11BB4452A00144E5F /* Interface.storyboard */; };
-		612AACE51BB4452A00144E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612AACE41BB4452A00144E5F /* Assets.xcassets */; };
-		612AACEC1BB4452A00144E5F /* TyriaMessenger WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 612AACEB1BB4452A00144E5F /* TyriaMessenger WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		612AACF31BB4452A00144E5F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AACF21BB4452A00144E5F /* InterfaceController.swift */; };
-		612AACF51BB4452A00144E5F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AACF41BB4452A00144E5F /* ExtensionDelegate.swift */; };
-		612AACF71BB4452A00144E5F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AACF61BB4452A00144E5F /* NotificationController.swift */; };
-		612AACF91BB4452A00144E5F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AACF81BB4452A00144E5F /* GlanceController.swift */; };
-		612AACFB1BB4452A00144E5F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AACFA1BB4452A00144E5F /* ComplicationController.swift */; };
-		612AACFD1BB4452A00144E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 612AACFC1BB4452A00144E5F /* Assets.xcassets */; };
 		612AAD0F1BB4462B00144E5F /* TMGuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AAD0E1BB4462B00144E5F /* TMGuild.swift */; settings = {ASSET_TAGS = (); }; };
 		612AAD121BB4473700144E5F /* TMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AAD111BB4473700144E5F /* TMManager.swift */; settings = {ASSET_TAGS = (); }; };
 		612AAD171BB44A2C00144E5F /* TMGuildTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612AAD161BB44A2C00144E5F /* TMGuildTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -38,45 +28,17 @@
 		6163E6181BBEA83D00AFDB62 /* TMAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6163E6171BBEA83D00AFDB62 /* TMAccount.swift */; settings = {ASSET_TAGS = (); }; };
 		6163E61A1BBEA9AB00AFDB62 /* TMGuildEmblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6163E6191BBEA9AB00AFDB62 /* TMGuildEmblem.swift */; settings = {ASSET_TAGS = (); }; };
 		6175570E1BBECA520008FE47 /* TMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6175570D1BBECA520008FE47 /* TMTabBarController.swift */; settings = {ASSET_TAGS = (); }; };
+		61DBC0D81BC42BFC006F7869 /* TMSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DBC0D71BC42BFC006F7869 /* TMSettingsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9A80EB7A889658E765AFCE6C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F7DF2191BA8AA9DEB53EE4 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		612AACDE1BB4452A00144E5F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 612AACC21BB4452900144E5F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 612AACDB1BB4452A00144E5F;
-			remoteInfo = "TyriaMessenger WatchKit App";
-		};
-		612AACED1BB4452A00144E5F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 612AACC21BB4452900144E5F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 612AACEA1BB4452A00144E5F;
-			remoteInfo = "TyriaMessenger WatchKit Extension";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		612AAD041BB4452A00144E5F /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				612AACEC1BB4452A00144E5F /* TyriaMessenger WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		612AAD081BB4452A00144E5F /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				612AACDD1BB4452A00144E5F /* TyriaMessenger WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,19 +55,6 @@
 		612AACD41BB4452900144E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		612AACD71BB4452900144E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		612AACD91BB4452900144E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		612AACDC1BB4452A00144E5F /* TyriaMessenger WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TyriaMessenger WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		612AACE21BB4452A00144E5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		612AACE41BB4452A00144E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		612AACE61BB4452A00144E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		612AACEB1BB4452A00144E5F /* TyriaMessenger WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TyriaMessenger WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		612AACF11BB4452A00144E5F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		612AACF21BB4452A00144E5F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		612AACF41BB4452A00144E5F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		612AACF61BB4452A00144E5F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		612AACF81BB4452A00144E5F /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
-		612AACFA1BB4452A00144E5F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
-		612AACFC1BB4452A00144E5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		612AACFE1BB4452A00144E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		612AAD0E1BB4462B00144E5F /* TMGuild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMGuild.swift; path = Classes/TMGuild.swift; sourceTree = "<group>"; };
 		612AAD111BB4473700144E5F /* TMManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMManager.swift; sourceTree = "<group>"; };
 		612AAD161BB44A2C00144E5F /* TMGuildTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMGuildTableViewController.swift; path = "Guild Table/TMGuildTableViewController.swift"; sourceTree = "<group>"; };
@@ -122,6 +71,7 @@
 		6163E6171BBEA83D00AFDB62 /* TMAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMAccount.swift; path = Classes/TMAccount.swift; sourceTree = "<group>"; };
 		6163E6191BBEA9AB00AFDB62 /* TMGuildEmblem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMGuildEmblem.swift; path = Classes/TMGuildEmblem.swift; sourceTree = "<group>"; };
 		6175570D1BBECA520008FE47 /* TMTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMTabBarController.swift; sourceTree = "<group>"; };
+		61DBC0D71BC42BFC006F7869 /* TMSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TMSettingsViewController.swift; path = Settings/TMSettingsViewController.swift; sourceTree = "<group>"; };
 		BB34E2EC11BDEF50FB1DB21C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,13 +81,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A80EB7A889658E765AFCE6C /* Pods.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		612AACE81BB4452A00144E5F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,8 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				612AACCC1BB4452900144E5F /* TyriaMessenger */,
-				612AACE01BB4452A00144E5F /* TyriaMessenger WatchKit App */,
-				612AACEF1BB4452A00144E5F /* TyriaMessenger WatchKit Extension */,
 				612AACCB1BB4452900144E5F /* Products */,
 				2BC92472C5DBB4EF25C9C043 /* Pods */,
 				2D96F065721A4A048266C02C /* Frameworks */,
@@ -177,8 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				612AACCA1BB4452900144E5F /* TyriaMessenger.app */,
-				612AACDC1BB4452A00144E5F /* TyriaMessenger WatchKit App.app */,
-				612AACEB1BB4452A00144E5F /* TyriaMessenger WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,44 +134,12 @@
 				612AACD61BB4452900144E5F /* LaunchScreen.storyboard */,
 				612AAD101BB4463100144E5F /* Classes */,
 				612AAD1A1BB44A9900144E5F /* Guild */,
+				61DBC0D61BC42BDF006F7869 /* Settings */,
 				612AAD0D1BB445D500144E5F /* Guild Table */,
 				6163E60E1BBEA04600AFDB62 /* JSON Parser */,
 				612AAD0C1BB4453400144E5F /* Supporting Files */,
 			);
 			path = TyriaMessenger;
-			sourceTree = "<group>";
-		};
-		612AACE01BB4452A00144E5F /* TyriaMessenger WatchKit App */ = {
-			isa = PBXGroup;
-			children = (
-				612AACE11BB4452A00144E5F /* Interface.storyboard */,
-				612AACE41BB4452A00144E5F /* Assets.xcassets */,
-				612AACE61BB4452A00144E5F /* Info.plist */,
-			);
-			path = "TyriaMessenger WatchKit App";
-			sourceTree = "<group>";
-		};
-		612AACEF1BB4452A00144E5F /* TyriaMessenger WatchKit Extension */ = {
-			isa = PBXGroup;
-			children = (
-				612AACF21BB4452A00144E5F /* InterfaceController.swift */,
-				612AACF41BB4452A00144E5F /* ExtensionDelegate.swift */,
-				612AACF61BB4452A00144E5F /* NotificationController.swift */,
-				612AACF81BB4452A00144E5F /* GlanceController.swift */,
-				612AACFA1BB4452A00144E5F /* ComplicationController.swift */,
-				612AACFC1BB4452A00144E5F /* Assets.xcassets */,
-				612AACFE1BB4452A00144E5F /* Info.plist */,
-				612AACF01BB4452A00144E5F /* Supporting Files */,
-			);
-			path = "TyriaMessenger WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		612AACF01BB4452A00144E5F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				612AACF11BB4452A00144E5F /* PushNotificationPayload.apns */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		612AAD0C1BB4453400144E5F /* Supporting Files */ = {
@@ -285,6 +192,14 @@
 			name = "JSON Parser";
 			sourceTree = "<group>";
 		};
+		61DBC0D61BC42BDF006F7869 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				61DBC0D71BC42BFC006F7869 /* TMSettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,46 +218,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				612AACDF1BB4452A00144E5F /* PBXTargetDependency */,
 			);
 			name = TyriaMessenger;
 			productName = TyriaMessenger;
 			productReference = 612AACCA1BB4452900144E5F /* TyriaMessenger.app */;
 			productType = "com.apple.product-type.application";
-		};
-		612AACDB1BB4452A00144E5F /* TyriaMessenger WatchKit App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 612AAD051BB4452A00144E5F /* Build configuration list for PBXNativeTarget "TyriaMessenger WatchKit App" */;
-			buildPhases = (
-				612AACDA1BB4452A00144E5F /* Resources */,
-				612AAD041BB4452A00144E5F /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				612AACEE1BB4452A00144E5F /* PBXTargetDependency */,
-			);
-			name = "TyriaMessenger WatchKit App";
-			productName = "TyriaMessenger WatchKit App";
-			productReference = 612AACDC1BB4452A00144E5F /* TyriaMessenger WatchKit App.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		612AACEA1BB4452A00144E5F /* TyriaMessenger WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 612AAD011BB4452A00144E5F /* Build configuration list for PBXNativeTarget "TyriaMessenger WatchKit Extension" */;
-			buildPhases = (
-				612AACE71BB4452A00144E5F /* Sources */,
-				612AACE81BB4452A00144E5F /* Frameworks */,
-				612AACE91BB4452A00144E5F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "TyriaMessenger WatchKit Extension";
-			productName = "TyriaMessenger WatchKit Extension";
-			productReference = 612AACEB1BB4452A00144E5F /* TyriaMessenger WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -354,12 +234,6 @@
 				ORGANIZATIONNAME = ChristianGrimsgaard;
 				TargetAttributes = {
 					612AACC91BB4452900144E5F = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					612AACDB1BB4452A00144E5F = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					612AACEA1BB4452A00144E5F = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -378,8 +252,6 @@
 			projectRoot = "";
 			targets = (
 				612AACC91BB4452900144E5F /* TyriaMessenger */,
-				612AACDB1BB4452A00144E5F /* TyriaMessenger WatchKit App */,
-				612AACEA1BB4452A00144E5F /* TyriaMessenger WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -392,23 +264,6 @@
 				612AACD81BB4452900144E5F /* LaunchScreen.storyboard in Resources */,
 				612AACD51BB4452900144E5F /* Assets.xcassets in Resources */,
 				612AACD31BB4452900144E5F /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		612AACDA1BB4452A00144E5F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				612AACE51BB4452A00144E5F /* Assets.xcassets in Resources */,
-				612AACE31BB4452A00144E5F /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		612AACE91BB4452A00144E5F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				612AACFD1BB4452A00144E5F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +330,7 @@
 				612AAD171BB44A2C00144E5F /* TMGuildTableViewController.swift in Sources */,
 				612AAD221BB44B1100144E5F /* TMGuildUpgradesViewController.swift in Sources */,
 				612AAD121BB4473700144E5F /* TMManager.swift in Sources */,
+				61DBC0D81BC42BFC006F7869 /* TMSettingsViewController.swift in Sources */,
 				612AAD241BB44B2E00144E5F /* TMGuildRanksViewController.swift in Sources */,
 				6163E6181BBEA83D00AFDB62 /* TMAccount.swift in Sources */,
 				612AAD0F1BB4462B00144E5F /* TMGuild.swift in Sources */,
@@ -488,32 +344,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		612AACE71BB4452A00144E5F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				612AACF71BB4452A00144E5F /* NotificationController.swift in Sources */,
-				612AACF51BB4452A00144E5F /* ExtensionDelegate.swift in Sources */,
-				612AACFB1BB4452A00144E5F /* ComplicationController.swift in Sources */,
-				612AACF31BB4452A00144E5F /* InterfaceController.swift in Sources */,
-				612AACF91BB4452A00144E5F /* GlanceController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		612AACDF1BB4452A00144E5F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 612AACDB1BB4452A00144E5F /* TyriaMessenger WatchKit App */;
-			targetProxy = 612AACDE1BB4452A00144E5F /* PBXContainerItemProxy */;
-		};
-		612AACEE1BB4452A00144E5F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 612AACEA1BB4452A00144E5F /* TyriaMessenger WatchKit Extension */;
-			targetProxy = 612AACED1BB4452A00144E5F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		612AACD11BB4452900144E5F /* Main.storyboard */ = {
@@ -530,14 +361,6 @@
 				612AACD71BB4452900144E5F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		612AACE11BB4452A00144E5F /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				612AACE21BB4452A00144E5F /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -626,68 +449,6 @@
 			};
 			name = Release;
 		};
-		612AAD021BB4452A00144E5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				INFOPLIST_FILE = "TyriaMessenger WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.christiangrimsgaard.TyriaMessenger.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		612AAD031BB4452A00144E5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				INFOPLIST_FILE = "TyriaMessenger WatchKit Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.christiangrimsgaard.TyriaMessenger.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		612AAD061BB4452A00144E5F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				IBSC_MODULE = TyriaMessenger_WatchKit_Extension;
-				INFOPLIST_FILE = "TyriaMessenger WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = net.christiangrimsgaard.TyriaMessenger.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		612AAD071BB4452A00144E5F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				IBSC_MODULE = TyriaMessenger_WatchKit_Extension;
-				INFOPLIST_FILE = "TyriaMessenger WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = net.christiangrimsgaard.TyriaMessenger.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
 		612AAD0A1BB4452A00144E5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17302F1F2B412D2840F8E34C /* Pods.debug.xcconfig */;
@@ -720,24 +481,6 @@
 			buildConfigurations = (
 				612AACFF1BB4452A00144E5F /* Debug */,
 				612AAD001BB4452A00144E5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		612AAD011BB4452A00144E5F /* Build configuration list for PBXNativeTarget "TyriaMessenger WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				612AAD021BB4452A00144E5F /* Debug */,
-				612AAD031BB4452A00144E5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		612AAD051BB4452A00144E5F /* Build configuration list for PBXNativeTarget "TyriaMessenger WatchKit App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				612AAD061BB4452A00144E5F /* Debug */,
-				612AAD071BB4452A00144E5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

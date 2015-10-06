@@ -10,5 +10,9 @@ import Foundation
 import UIKit
 
 class TMGuildRanksViewController: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
 }

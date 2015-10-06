@@ -7,65 +7,44 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class TMJSONParser {
+    class func parseAccount(json: JSON) -> TMAccount {
+        let id = json["id"].stringValue
+        let name = json["name"].stringValue
+        let world = json["world"].intValue
+        let created = json["created"].stringValue
+        var guilds = [String]()
+        
+        for (_, guild):(String, JSON) in json["guilds"] {
+            guilds.append(guild.stringValue)
+        }
+        
+        let account = TMAccount.init(withID: id, name: name, world: world, guilds: guilds, created: created)
+        
+        return account
+    }
     
-    
-//    class func getAccountData(gotAccountCallback: (TMAccount) -> ()) {
-//        TMDataManager.getAPIDataFromURLWithSuccess(TM_GW2API_ACCOUNT_URL, success: {(data) -> Void in
-//            let parsedObject: AnyObject?
-//            
-//            do {
-//                parsedObject = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
-//            } catch _ {
-//                parsedObject = nil
-//            }
-//            
-//            guard let parsedAccount = parsedObject as? NSDictionary,
-//                  let id = parsedAccount["id"] as? String,
-//                  let name = parsedAccount["name"] as? String,
-//                  let world = parsedAccount["world"] as? Int,
-//                  let guilds = parsedAccount["guilds"] as? NSArray,
-//                  let created = parsedAccount["created"] as? String else {return}
-//            
-//            // Fetch data for each guild in account.guilds
-//            var guildsArr: Array = [TMGuild]()
-//            
-//            let account = TMAccount.init(withID: id, name: name, world: world, guilds: guildsArr, created: created)
-//            
-//            gotAccountCallback(account)
-//        })
-//    }
-//    
-//    class func getGuildDataWithID(id: String, gotGuildCallback: (TMGuild) -> ()) {
-//        let guildURL = TM_GW2API_GUILD_DETAILS_URL.stringByReplacingOccurrencesOfString("$GUILD_ID", withString: id)
-//        
-//        TMDataManager.getAPIDataFromURLWithSuccess(guildURL, success: {(data) -> Void in
-//            let parsedObject: AnyObject?
-//            
-//            do {
-//                parsedObject = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments)
-//            } catch _ {
-//                parsedObject = nil
-//            }
-//            
-//            guard let parsedGuild = parsedObject as? NSDictionary else {return}
-//            guard let id = parsedGuild["guild_id"] as? String else {return}
-//            guard let name = parsedGuild["guild_name"] as? String else {return}
-//            guard let tag = parsedGuild["tag"] as? String else {return}
-//            guard let parsedEmblem = parsedGuild["emblem"] as? NSDictionary else {return}
-//            guard let backgroundID = parsedEmblem["background_id"] as? Int else {return}
-//            guard let foregroundID = parsedEmblem["foreground_id"] as? Int else {return}
-//            guard let flags = parsedEmblem["flags"] as? NSArray else {return}
-//            guard let backgroundColorID = parsedEmblem["background_color_id"] as? Int else {return}
-//            guard let foregroundPrimaryColorID = parsedEmblem["foreground_primary_color_id"] as? Int else {return}
-//            guard let foregroundSecondaryColorID = parsedEmblem["foreground_secondary_color_id"] as? Int else {return}
-//            
-//            let emblem = TMGuildEmblem.init(withBackgroundID: backgroundID, foregroundID: foregroundID, flags: flags as! [String], backgroundColorID: backgroundColorID, foregroundPrimaryColorID: foregroundPrimaryColorID, foregroundSecondaryColorID: foregroundSecondaryColorID)
-//            
-//            let guild = TMGuild.init(withID: id, name: name, tag: tag, emblem: emblem)
-//            
-//            gotGuildCallback(guild)
-//        })
-//    }
+    class func parseGuild(json: JSON) -> TMGuild {
+        let id = json["guild_id"].stringValue
+        let name = json["guild_name"].stringValue
+        let tag = json["tag"].stringValue
+        
+        let foregroundID = json["emblem"]["foreground_id"].intValue
+        let foregroundPrimaryColorID = json["emblem"]["foreground_primary_color_id"].intValue
+        let foregroundSecondaryColorID = json["emblem"]["foreground_secondary_color_id"].intValue
+        let backgroundID = json["emblem"]["background_id"].intValue
+        let backgroundColorID = json["emblem"]["background_color_id"].intValue
+        var flags = [String]()
+        
+        for (_, flag):(String, JSON) in json["emblem"]["flags"] {
+            flags.append(flag.stringValue)
+        }
+        
+        let emblem = TMGuildEmblem.init(withBackgroundID: backgroundID, foregroundID: foregroundID, flags: flags, backgroundColorID: backgroundColorID, foregroundPrimaryColorID: foregroundPrimaryColorID, foregroundSecondaryColorID: foregroundSecondaryColorID)
+        let guild = TMGuild.init(withID: id, name: name, tag: tag, emblem: emblem)
+        
+        return guild
+    }
 }

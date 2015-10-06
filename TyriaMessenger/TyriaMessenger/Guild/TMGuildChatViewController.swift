@@ -10,5 +10,9 @@ import Foundation
 import UIKit
 
 class TMGuildChatViewController: UIViewController {
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+    }
 }
