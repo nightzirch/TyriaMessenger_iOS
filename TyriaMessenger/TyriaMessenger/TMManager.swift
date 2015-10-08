@@ -7,12 +7,18 @@
 //
 
 import Foundation
+import WatchConnectivity
+import EVReflection
+import SwiftyJSON
 
 private let TMManagerSharedInstance = TMManager()
 
-public class TMManager: NSObject {
-    public var account = TMAccount()
-    public var guildList = [TMGuild]()
+public class TMManager: NSObject, WCSessionDelegate {
+    var account = TMAccount()
+    var guildList = [TMGuild]()
+    var defaults = NSUserDefaults.standardUserDefaults()
+    
+    var session: WCSession!
     
     public class var sharedInstance : TMManager {
         return TMManagerSharedInstance
@@ -29,6 +35,64 @@ public class TMManager: NSObject {
     
     public override init() {
         super.init()
+        
+        if (WCSession.isSupported()) {
+            session = WCSession.defaultSession()
+            session.delegate = self
+            session.activateSession()
+        }
+        
+        sendGuildListToWatch()
+        
         updateData()
     }
+    
+    func setAPIToken(token: String) {
+        defaults.setObject(token, forKey: TM_API_TOKEN_KEY)
+    }
+    
+    func getAPIToken() -> String {
+        if defaults.objectForKey(TM_API_TOKEN_KEY) != nil {
+            return defaults.stringForKey(TM_API_TOKEN_KEY)!
+        }
+        
+        return ""
+    }
+    
+    func sendGuildListToWatch() {
+        print("Sending guild list to watch")
+        
+        var guildDictArr = [NSDictionary]()
+        
+        for guild in guildList {
+            let emblemDict = guild.emblem.toDictionary()
+            let guildDict = guild.toDictionary()
+            guildDict.setValue(emblemDict, forKey: "emblem")
+            guildDictArr.append(guildDict)
+        }
+        
+        print(guildDictArr)
+        
+        do {
+            try session.updateApplicationContext(["guildList": guildDictArr])
+        } catch {
+            print(error)
+        }
+    }
+    
+    func sendAccountToWatch() {
+        print("Sending account to watch")
+        
+        let accountDict = account.toDictionary()
+        
+        print(accountDict)
+        
+        do {
+            try session.updateApplicationContext(["account": accountDict])
+        } catch {
+            print(error)
+        }
+    }
+    
+    
 }

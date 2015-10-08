@@ -29,7 +29,8 @@ class TMJSONParser {
     class func parseGuild(json: JSON) -> TMGuild {
         let id = json["guild_id"].stringValue
         let name = json["guild_name"].stringValue
-        let tag = json["tag"].stringValue
+        let tag = "[" + json["tag"].stringValue + "]"
+        let emblemData = NSData(data: UIImagePNGRepresentation(UIImage(named: "Guild Emblem")!)!)
         
         let foregroundID = json["emblem"]["foreground_id"].intValue
         let foregroundPrimaryColorID = json["emblem"]["foreground_primary_color_id"].intValue
@@ -42,8 +43,8 @@ class TMJSONParser {
             flags.append(flag.stringValue)
         }
         
-        let emblem = TMGuildEmblem.init(withBackgroundID: backgroundID, foregroundID: foregroundID, flags: flags, backgroundColorID: backgroundColorID, foregroundPrimaryColorID: foregroundPrimaryColorID, foregroundSecondaryColorID: foregroundSecondaryColorID)
-        let guild = TMGuild.init(withID: id, name: name, tag: tag, emblem: emblem)
+        let emblem = TMGuildEmblem.init(withBackgroundID: backgroundID, backgroundColorID: backgroundColorID, foregroundID: foregroundID, foregroundPrimaryColorID: foregroundPrimaryColorID, foregroundSecondaryColorID: foregroundSecondaryColorID, flags: flags)
+        let guild = TMGuild.init(withID: id, name: name, tag: tag, emblem: emblem, emblemData: emblemData)
         
         return guild
     }

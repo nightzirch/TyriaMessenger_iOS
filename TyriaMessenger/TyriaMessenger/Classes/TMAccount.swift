@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import UIKit
 
-public class TMAccount: NSObject {
+class TMAccount: NSObject, NSCoding {
     var id: String = ""
     var name: String = ""
     var world: Int = 0
@@ -27,5 +26,23 @@ public class TMAccount: NSObject {
         self.world = world
         self.guilds = guilds
         self.created = created
+    }
+    
+    required convenience init(coder aDecoder: NSCoder) {
+        let id = aDecoder.decodeObjectForKey("id") as? String ?? ""
+        let name = aDecoder.decodeObjectForKey("name") as? String ?? ""
+        let world = aDecoder.decodeObjectForKey("world") as? Int ?? 0
+        let guilds = aDecoder.decodeObjectForKey("guilds") as? [String] ?? [String]()
+        let created = aDecoder.decodeObjectForKey("created") as? String ?? ""
+        
+        self.init(withID: id, name: name, world: world, guilds: guilds, created: created)
+    }
+    
+    func encodeWithCoder(aCoder: NSCoder) {
+        aCoder.encodeObject(id, forKey: "id")
+        aCoder.encodeObject(name, forKey: "name")
+        aCoder.encodeObject(world, forKey: "world")
+        aCoder.encodeObject(guilds, forKey: "guilds")
+        aCoder.encodeObject(created, forKey: "created")
     }
 }

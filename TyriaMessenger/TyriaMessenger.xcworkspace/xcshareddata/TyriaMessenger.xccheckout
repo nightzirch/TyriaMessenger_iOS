@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E02AFF11-ACA8-4722-943B-F72FDBE2ACF3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TyriaMessenger</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5C6915BEB723A4075C02493E0A22A25A8B8A8631</key>
+		<string>github.com:nightzirch/TyriaMessenger_iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TyriaMessenger/TyriaMessenger.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5C6915BEB723A4075C02493E0A22A25A8B8A8631</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:nightzirch/TyriaMessenger_iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5C6915BEB723A4075C02493E0A22A25A8B8A8631</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5C6915BEB723A4075C02493E0A22A25A8B8A8631</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TyriaMessenger_iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -26,3 +26,9 @@ let TM_GW2API_GUILD_DETAILS_URL         = TM_GW2API_V1_BASE_URL + "guild_details
 //let TM_GW2API_GUILD_RANKS_URL           = TM_GW2API_GUILD_BASE_URL + "$GUILD_ID/ranks"
 //let TM_GW2API_GUILD_PERMISSIONS_URL     = TM_GW2API_GUILD_BASE_URL + "permissions"
 //let TM_GW2API_GUILD_UPGRADES_URL        = TM_GW2API_GUILD_BASE_URL + "upgrades"
+
+// NSUserDefaults
+let TM_API_TOKEN_KEY                    = "APIToken"
+
+// Guild Emblem URL
+let TM_GUILD_EMBLEM_BASE_URL            = "http://data.gw2.fr/guild-emblem/name/"

@@ -16,13 +16,15 @@ class TMSettingsViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         apiTokenTextField.delegate = self
+        apiTokenTextField.text = TMManager.sharedInstance.getAPIToken()
         
         let tapAnywhere: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tapAnywhere)
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        print(textField.text)
+        let token = textField.text
+        TMManager.sharedInstance.setAPIToken(token!)
     }
     
     func dismissKeyboard() {
